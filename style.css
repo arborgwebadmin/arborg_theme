@@ -731,3 +731,147 @@ table.simcal-calendar-grid .simcal-day-number {
     }
 }
 
+/*boarder*/
+#matsedla-widget .simcal-day-label > span {
+    border: 2px solid #CACACA;
+}
+
+#matsedla-widget .simcal-events-list-container .simcal-day-label:nth-child(1):not(.selected-label) > span:hover {
+    background-color: var(--color1Fade) !important;
+}
+/*valinn dagur*/
+#matsedla-widget .simcal-events-list-container .selected-label:nth-child(1) > span{
+    border-color: var(--color1);
+    background-color: var(--color1);
+}
+
+#matsedla-widget .simcal-events-list-container .simcal-day-label:nth-child(2):not(.selected-label) > span:hover {
+    background-color: var(--color2Fade) !important;
+}
+/*valinn dagur*/
+
+#matsedla-widget .simcal-events-list-container .selected-label:nth-child(2) > span{
+    border-color: var(--color2);
+    background-color: var(--color2) !important;
+}
+
+#matsedla-widget .simcal-events-list-container .simcal-day-label:nth-child(5):not(.selected-label) > span:hover {
+    background-color: var(--color3Fade) !important;
+}
+/*valinn dagur*/
+#matsedla-widget .simcal-events-list-container .selected-label:nth-child(5) > span{
+    border-color: var(--color3);
+    background-color: var(--color3) !important;
+}
+#matsedla-widget .simcal-events-list-container .simcal-day-label:nth-child(7):not(.selected-label) > span:hover {
+    background-color: var(--color4Fade) !important;
+}
+#matsedla-widget .simcal-events-list-container .selected-label:nth-child(7) > span {
+    border-color: var(--color4);
+    background-color: var(--color4) !important;
+}
+#matsedla-widget .simcal-events-list-container .selected-label:nth-child(7) span {
+    color: #000 !important;
+}
+
+
+
+/*  ------------------------------------------------------------------------------------------------------- COLORS   */
+
+#skoladagatal .simcal-default-calendar .simcal-present {
+    border: solid 2px var(--color1);
+    
+}
+
+.simcal-calendar-head tr:nth-child(1), .simcal-default-calendar-grid.simcal-default-calendar-light .simcal-day:hover{
+	background-color: var(--color1) !important; 
+}
+
+.qtip.simcal-default-calendar {
+	border-color: var(--color4);
+}
+
+
+table.simcal-calendar-grid .simcal-events {
+	color: var(--color1);
+}
+
+.simcal-default-calendar-grid .simcal-events > .simcal-event:hover {
+	color: #fff;
+}
+
+.simcal-calendar-grid thead tr:nth-child(1) h3 {
+	color: #fff;
+}
+
+.arrowlink a, .arrowlink span {
+    color: var(--color4) !important;
+}
+
+.bullet-color ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: var(--color2); /* Change the color */
+}
+
+.summary a:hover {
+    color: var(--color1);
+}
+
+.parent-menu-item:nth-child(odd):hover {
+	background-color: var(--color1Fade);
+}
+
+.parent-menu-item:nth-child(odd) .sub-menu .menu-item:not(.menu-item-has-children):hover {
+	border-left: 3px solid var(--color1);
+}
+
+.parent-menu-item:nth-child(even):hover {
+	background-color: var(--color2Fade);
+}
+
+
+.parent-menu-item:nth-child(even) .menu-item:hover {
+	border-left: 3px solid var(--color2);
+}
+
+.parent-menu-item:nth-child(even) ul.sub-menu {
+	border-color: var(--color2) !important;
+}
+
+#vidburdir .simcal-event-details >p:first-child {
+    color: var(--color1);
+}
+
+.link a, .icon-btn .fl-icon-wrap a{
+	color: var(--color4) !important;
+}
+
+.btn-color .fl-button, button.btn-square {
+    background-color: var(--color1) !important;
+    border: none !important;
+}
+
+.child-sidebar-menu .menu-item:hover {
+	border-left: 3px solid var(--color3);
+}
+
+
+.parent-sidebar-menu .current-menu-ancestor > a {
+	border-left: 3px solid var(--color4);
+}
+
+.fl-separator {
+    border-top: 2px solid var(--color2) !important;
+}
+
+.fl-tabs .fl-tabs-label.fl-tab-active {
+	color: var(--color1);
+}
+
+.felligluggi .fl-accordion-button-icon {
+    color: var(--color2);
+}
+
+.felligluggi .fl-accordion-item-active .fl-accordion-button-label {
+    color: var(--color1) !important;
+}
