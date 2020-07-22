@@ -1,0 +1,886 @@
+/**
+Theme Name: skolasidur-arborg
+Author: Hólmfríður
+Author URI: #
+Description: Samræmt útlit fyrir undirvefi Árborgar, hönnun byggð á nýverandi vef Árborgar.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: skolasidur-arborg
+Template: astra
+*/
+/*Screen sizes*/
+/*medium breaking point 992px
+ * small breaking point 768px */
+/* 													 stylings 											*/
+@import "iconStyle.css";
+
+.no-border {
+    border: none;
+}
+
+.table-no-border, .table-no-border * {
+    border: none;
+}
+
+.right-align {
+	text-align: right;
+}
+
+.right-side-link p {
+    margin-bottom: 0;    
+}
+
+.btn-square {
+	width: 250px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	line-height: 18px;
+}
+
+.float-right {
+    float: right;
+}
+
+.felligluggi .fl-accordion-item {
+    background-color: #fff;
+    border: none;
+}
+
+.felligluggi .fl-accordion-content {
+    padding: 10px 30px 30px 60px;
+}
+
+.fl-accordion-button-label:focus {
+	outline-style: none !important;
+}
+
+#split-two .fl-rich-text {
+    -ms-column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -ms-column-gap: 20px;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+}
+
+@media (max-width: 768px) {
+    #split-two .fl-rich-text {
+        -ms-column-count: 1;
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+
+p {
+	margin-bottom: 1em !important;
+}
+
+/*												font styling															*/
+
+.summary {
+    font-size: 20px;
+    font-weight: 300;
+	margin-bottom: 0;
+}
+
+.summary a[href]{
+    font-weight: 400;
+}
+
+p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
+	padding-right: 10px;
+}
+
+
+.arrowlink  a {
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+.arrowlink a span {
+    font-weight: 600; 
+}
+
+.bullet-color ul {
+  list-style: none; /* Remove default bullets */
+}
+
+.bullet-color ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  font-weight: bold;
+  font-size: 22px;/* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.link a {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.link a:hover {
+    text-decoration: underline !important;
+}
+
+.line-header span {
+	font-size: 14px;
+	color: rgba(31, 31, 31, 0.6);
+	font-weight: 600;
+}
+
+/*									 footer styling 																				*/
+.footer-link img {
+	margin: 30px;
+}
+
+.widget_media_image img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contact-item{
+	font-size: 18px;
+	line-height: 1.75em;
+	white-space: nowrap;
+}
+
+
+.contact-item span:nth-child(1) {
+	font-size: 24px;
+	margin-right: 10px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.contact-item :nth-child(2) {
+	display: table-cell;
+}
+
+@media (min-width: 768px) {
+	.site-footer .ast-row {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media (max-width: 768px) {
+	.widget {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+}
+
+
+/* 											header styling														*/
+
+a.menu-link:hover span.sub-arrow:after {
+	transform: rotate(180deg);
+}
+
+.parent-menu-item {
+	font-size: 1.1rem;
+	cursor: pointer;
+}
+
+ul.sub-menu {
+	padding: 15px;
+}
+
+.parent-menu-item:nth-child(even) .menu-item,
+.parent-menu-item:nth-child(odd) .sub-menu .menu-item:not(.menu-item-has-children) {
+	border-left: 3px solid transparent;
+}
+
+.ast-masthead-custom-menu-items {
+	font-size: 32px;
+	padding: 0 17.6px !important;
+}
+
+.facebook-link {
+	padding: 0 17.6px !important;
+	font-size: 32px;
+}
+
+li.ast-masthead-custom-menu-items a {
+	display: table-cell;
+	vertical-align: baseline !important;
+}
+/*posts*/
+
+.fl-post-grid-text {
+	margin-top: 30px;
+    padding: 0 !important;    
+}
+.fl-post-grid-image {
+	height: 280px;
+	overflow: hidden;
+}
+
+.fl-post-grid-image img{
+	transition: opacity .3s cubic-bezier(.455,.03,.515,.955);
+}
+/*														side menu styles								*/
+.parent-sidebar-menu .current-menu-ancestor {
+	padding-left: 25px;
+}
+
+.parent-sidebar-menu .current-menu-ancestor > a {
+	font-weight: 600;
+	padding: 10px 10px 10px 20px;
+
+	border-left: 3px solid #335227;
+}
+
+.child-sidebar-menu .menu-item {
+	padding: 10px 0px 5px 40px;
+	font-size: 15px;
+	border-left: 3px solid transparent;
+}
+
+.child-sidebar-menu .current_page_item {
+	font-weight: 600;
+}
+
+
+
+
+
+/*														 page-styling 											*/
+@media (max-width: 768px) {
+    #page-side-menu {
+        width: 0 !important;
+    }
+
+    #page-main-content {
+        width: 100% !important;
+    }
+    
+
+}
+
+
+/*																icon-btn-group								*/
+#icons-menu-block .fl-icon-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#icons-menu-block .fl-icon-text {
+    padding-left: 0;
+    text-align: center;
+}
+
+#icons-menu-block .icon-btn {
+    height: 120px;
+}
+
+@media (max-width: 768px) {
+    #icons-menu-block .fl-col-group {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    }
+    
+    #icons-menu-block .fl-col-group::before {
+        position: absolute;
+    }
+} 
+
+@media (max-width: 360px) {
+    #icons-menu-block .fl-col-group {
+        grid-template-columns: auto auto;
+    }
+    
+} 
+
+/*														events														*/
+
+#vidburdir dt {
+    display: none;
+}
+
+#vidburdir .simcal-events-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#vidburdir .simcal-day {
+    margin:1vw;
+}
+
+#vidburdir .simcal-events {
+    max-width: 330px;
+}
+
+/*meta evt*/
+#vidburdir .simcal-event-details p:nth-child(1)  {
+    position: relative;
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-align:start;
+    align-items:flex-start;
+    flex-wrap:wrap;-webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    flex-direction:column;
+    line-height: 35px;    
+    font-size:14px;
+    font-weight:400;
+    height: 35px;
+    margin-bottom: 28px;
+    color: rgba(31,31,31,.7) !important;
+    max-width: 300px;
+}
+
+/*js-date*/
+#vidburdir .simcal-event-start {
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    flex-direction:column;
+    -webkit-box-pack:center;
+    justify-content:center;
+    width:auto;
+    height:100%;
+    color:#000;
+    padding-right:20px;
+    min-width:60px;
+}
+
+/*d*/
+#vidburdir .simcal-event-details .event-date-day {
+    position:absolute;
+    top:0;
+    left:0;
+    font-family:Martel,serif;
+    font-size:2.8571429em;
+    -webkit-box-direction: normal;
+}
+
+/*m*/
+#vidburdir .simcal-event-details .event-date-month, #vidburdir .simcal-event-details .event-date-year {
+    height: 50%;
+    line-height: 1.1;
+    padding-left: 60px;
+}
+
+#vidburdir .event-date-time, #vidburdir .simcal-event-start-location {
+    height: 50%;
+    line-height: 1.1;
+    
+}
+
+#vidburdir .simcal-event-details > p:nth-child(2) {
+    display: inline-block;
+}
+
+#vidburdir .simcal-event-details > p:nth-child(3) {
+    font-size: 2em;
+    display: inline-block;
+    margin:0;
+}
+
+#vidburdir .simcal-event-details > p:nth-child(1) {
+    visibility: collapse;
+}
+
+#vidburdir .simcal-event-details p span {
+    visibility: visible;
+}
+
+@media (max-width: 1000px) {
+
+	#vidburdir .simcal-day:nth-child(10){
+    	display: none;
+	}
+	
+}
+
+@media (max-width: 768px) {
+    #vidburdir .simcal-events-list-container {
+        flex-direction: column;
+    }
+	
+	#vidburdir .simcal-day {
+		margin: auto;
+	}
+	
+	#vidburdir .simcal-day:nth-child(8){
+    	display: none;
+	}
+	
+}
+
+
+
+/*														calendar												*/
+.simcal-calendar-grid thead tr:nth-child(2) th {
+    cursor: default;
+}
+
+.simcal-event-bubble .simcal-event-details p {
+	font-size: 13px;
+}
+
+.simcal-default-calendar .simcal-nav-button.simcal-next:hover {
+	margin-right: 0;
+}
+
+.simcal-default-calendar .simcal-nav-button.simcal-prev:hover {
+	margin-left: 0;
+}
+
+#skoladagatal .simcal-nav-button:disabled, #skoladagatal .simcal-nav-button:diabled:hover {
+	color: #000
+}
+
+#skoladagatal .simcal-nav-button, #skoladagatal .simcal-nav-button:hover, #skoladagatal .simcal-nav-button:focus {
+	color: #fff
+}
+
+.simcal-calendar-grid {
+	position: relative;
+	background-color: #fff;
+	margin-top: 50px;
+}
+
+.simcal-calendar-grid thead tr:nth-child(1) {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	display: table;
+	top: -80px;
+	height: 70px;
+}
+
+
+.simcal-calendar-grid thead tr:nth-child(1) h3 {
+	font-size: 22px;
+}
+
+.simcal-calendar-grid thead tr:nth-child(2) {
+	background-color: #d1d1d1;
+	color: #5b5b5b;
+	text-transform: uppercase;
+	font-size: 14px;
+	height: 48px;
+}
+
+.simcal-default-calendar-grid > table thead th {
+	vertical-align: middle;
+}
+
+.simcal-default-calendar-grid .simcal-day-void,
+.simcal-default-calendar-grid .simcal-day-void:hover,
+.simcal-default-calendar-grid .simcal-day.simcal-day-void:hover {
+	background-color: transparent !important;
+}
+
+table.simcal-calendar-grid .simcal-events,
+.simcal-default-calendar-grid .simcal-events > .simcal-event:hover {
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none !important;
+}
+
+table.simcal-calendar-grid .simcal-events {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+table.simcal-calendar-grid .simcal-day-number {
+	font-size: 24px;
+	text-align: right;
+	background-color: transparent !important;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+table.simcal-calendar-grid .simcal-day-has-events .simcal-day-number,
+table.simcal-calendar-grid .simcal-day-number {
+	color: #5b5b5b !important;
+}
+
+.simcal-default-calendar-grid.simcal-default-calendar-light .simcal-day:hover .simcal-day-number {
+	color: #fff !important;
+}
+
+.qtip.simcal-default-calendar .simcal-event-start {
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+
+.qtip.simcal-default-calendar .simcal-event-title {
+	font-size: 17px;
+	margin-top: 10px;
+}
+
+.qtip-content {
+	padding: 5px 9px;
+	text-align: left;
+	word-wrap: break-word;
+	box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.05);
+}
+
+.qtip.simcal-default-calendar {
+	border-radius: 6px;
+	border-top: 6px solid;
+}
+
+
+
+#skoladagatal .simcal-day + #skoladagatal .simcal-day-void {
+    border-left: solid 1px #d1d1d1;
+}
+
+#skoladagatal .simcal-calendar-grid tr .simcal-week-day {
+    border-top: 1px solid rgba(0,0,0,.1) !important;
+} 
+
+#skoladagatal .simcal-calendar-grid tr .simcal-week-day-0 {
+    border-left: 1px solid rgba(0,0,0,.1);
+}
+
+.simcal-default-calendar .simcal-present div:nth-child(1) {
+	border: 2px;
+}
+
+
+/*		matedill vika		*/
+
+#matsedill-container {
+    background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url('/wp-content/themes/astra-child/fonts/dinner.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+#matsedla-widget .simcal-day {
+    display: none;
+}
+
+#matsedla-widget .simcal-calendar {
+    padding: 0 50px;
+}
+
+
+
+#matsedla-widget .simcal-day-label span {
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    text-align: center;
+	background-color: transparent !important;
+    color: #000;
+}
+
+
+#matsedla-widget .simcal-day-label > span {
+    width: 250px;
+    margin: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* smartphones, touchscreens */
+@media (hover: none) {
+    #matsedla-widget .simcal-day-label > span:hover {
+    	background-color: #ee1c25 !important;
+	}
+}
+    
+#matsedla-widget .simcal-day-label {
+    border-bottom: 0 !important;
+}
+
+#matsedla-widget .selected-day {
+    display: block;
+    grid-area: 1 / 2 / 5 / 4;
+    font-size: 50px;
+    margin: auto;
+}
+
+#matsedla-widget .simcal-event-description {
+    margin: 0 !important;
+    font-size: 20px;
+}
+
+#matsedla-widget .simcal-event-details {
+    text-align: center;
+}
+
+#matsedla-widget .simcal-event-details p {
+	margin: 0 !important;
+	line-height: 1.5;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#matsedla-widget .selected-label span{
+    color: #fff !important;
+}
+
+#matsedla-widget .date-day {
+    display: block;
+    font-size: 18px;
+} 
+
+#matsedla-widget .date-detail {
+    font-size: 14px;
+}
+
+#matsedla-widget .simcal-events-list-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#matsedla-widget .simcal-day-label:nth-child(3) {
+    grid-row: 2;      
+}
+
+#matsedla-widget .simcal-day-label:nth-child(5) {
+    grid-row: 3;      
+}
+
+#matsedla-widget .simcal-day-label:nth-child(7) {
+    grid-row: 4;      
+}
+
+#matsedla-widget .selected-day {
+    display: block;
+    grid-area: 1 / 2 / 5 / 4;
+    font-size: 50px;
+    margin: auto;
+}
+
+#matsedla-widget .simcal-day-label > span {
+	cursor: pointer;
+}
+
+@media (max-width: 810px) {
+    
+    #matsedla-widget .simcal-day-label {
+        margin: auto;
+    }
+    
+    #matsedla-widget .simcal-calendar {
+        padding: 0;
+    }
+	
+
+    #matsedla-widget .simcal-day-label > span {
+        width: 150px;
+    }
+    
+    #matsedla-widget .simcal-day-label:nth-child(3) {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    #matsedla-widget .simcal-day-label:nth-child(5) {
+        grid-row: 1;
+        grid-column: 3;      
+    }
+    
+    #matsedla-widget .simcal-day-label:nth-child(7) {
+        display: none;      
+    }
+    
+    #matsedla-widget .selected-day {
+        grid-area: 2 / 1 / 4 / 4;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #matsedla-widget .simcal-events-list-container {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+	
+	#matsedla-widget .selected-day {
+		top: 30%
+	}
+
+	#matsedla-widget .date-day {
+	    font-size: 16px;
+	}
+	
+	#matsedla-widget .simcal-day-label > span {
+        width: 120px;
+    }
+    #matsedla-widget .simcal-day-label:nth-child(5) {
+        display: none;      
+    }
+    
+    #matsedla-widget .selected-day {
+        grid-area: 2 / 1 / 4 / 3
+    }
+}
+
+
+
+
+/*colors*/
+
+
+/*boarder*/
+#matsedla-widget .simcal-day-label > span {
+    border: 2px solid #CACACA;
+}
+
+#matsedla-widget .simcal-events-list-container .simcal-day-label:nth-child(1):not(.selected-label) > span:hover {
+    background-color: rgba(238, 28, 37, 0.2) !important;
+}
+/*valinn dagur*/
+#matsedla-widget .simcal-events-list-container .selected-label:nth-child(1) > span{
+    border-color: #ee1c25;
+    background-color: #ee1c25 !important;
+}
+
+#matsedla-widget .simcal-events-list-container .simcal-day-label:nth-child(3):not(.selected-label) > span:hover {
+    background-color: rgba(9, 175, 239, 0.2) !important;
+}
+/*valinn dagur*/
+#matsedla-widget .simcal-events-list-container .selected-label:nth-child(3) > span{
+    border-color: #09afef;
+    background-color: #09afef !important;
+}
+
+#matsedla-widget .simcal-events-list-container .simcal-day-label:nth-child(5):not(.selected-label) > span:hover {
+    background-color: rgba(57, 182, 73, 0.2) !important;
+}
+/*valinn dagur*/
+#matsedla-widget .simcal-events-list-container .selected-label:nth-child(5) > span{
+    border-color: #39b649;
+    background-color: #39b649 !important;
+}
+#matsedla-widget .simcal-events-list-container .simcal-day-label:nth-child(7):not(.selected-label) > span:hover {
+    background-color: rgba(255, 242, 21, 0.2) !important;
+}
+#matsedla-widget .simcal-events-list-container .selected-label:nth-child(7) > span {
+    border-color: #fff215;
+    background-color: #fff215 !important;
+}
+#matsedla-widget .simcal-events-list-container .selected-label:nth-child(7) span {
+    color: #000 !important;
+}
+
+
+
+/*  ------------------------------------------------------------------------------------------------------- COLORS   */
+
+#skoladagatal .simcal-default-calendar .simcal-present {
+    border: solid 2px #335227;
+    
+}
+
+.simcal-calendar-head tr:nth-child(1) {
+	background-color: #335227 !important; 
+}
+
+.simcal-default-calendar-grid.simcal-default-calendar-light .simcal-day:hover  {
+	background-color: #335227;
+}
+
+.qtip.simcal-default-calendar {
+	border-color: #72b159;
+}
+
+
+table.simcal-calendar-grid .simcal-events {
+	color: #335227
+}
+
+.simcal-default-calendar-grid .simcal-events > .simcal-event:hover {
+	color: #fff;
+}
+
+.simcal-calendar-grid thead tr:nth-child(1) h3 {
+	color: #fff;
+}
+
+.arrowlink a, .arrowlink span {
+    color: #335227 !important;
+}
+
+.bullet-color ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #72b159; /* Change the color */
+}
+
+.summary a:hover {
+    color: #335227;
+}
+
+
+.parent-menu-item:nth-child(odd):hover {
+	background-color: rgba(80,115,66,0.2);
+}
+
+.parent-menu-item:nth-child(odd) .sub-menu .menu-item:not(.menu-item-has-children):hover {
+	border-left: 3px solid #507342;
+}
+
+.parent-menu-item:nth-child(even):hover {
+	background-color: rgba(147,191,104,0.2);
+}
+
+
+.parent-menu-item:nth-child(even) .menu-item:hover {
+	border-left: 3px solid #93bf68;
+}
+
+.parent-menu-item:nth-child(even) ul.sub-menu {
+	border-color: #93bf68 !important;
+}
+
+#vidburdir .simcal-event-details >p:first-child {
+    color: #335227;
+}
+
+.link a, .icon-btn .fl-icon-wrap a{
+	color: #335227 !important;
+}
+
+.btn-color .fl-button, button.btn-square {
+    background-color: #335227 !important;
+    border: none !important;
+}
+
+.child-sidebar-menu .menu-item:hover {
+	border-left: 3px solid #72b159
+}
+
+
+.parent-sidebar-menu .current-menu-ancestor > a {
+	border-left: 3px solid #335227;
+}
+
+.fl-separator {
+    border-top: 2px solid #72b159 !important;
+}
+
+.fl-tabs .fl-tabs-label.fl-tab-active {
+	color: #335227;
+}
+
+.felligluggi .fl-accordion-button-icon {
+    color: #335227;
+}
+
+.felligluggi .fl-accordion-item-active .fl-accordion-button-label {
+    color: #72b159 !important;
+}
