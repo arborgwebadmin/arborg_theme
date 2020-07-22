@@ -25,6 +25,7 @@ function child_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'child_enqueue_styles', 15 );
 /*setja icona í thema nota class class="icon [iconName]" */
 /*Prufa*/
+/*gitprufa*/
 function wpb_hook_javascript_header() {
 	?>
 		<script>
