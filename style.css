@@ -99,7 +99,7 @@ p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
 
 .arrowlink  a {
     font-weight: 600;
-    margin: 0 10px;
+    margin-left: 20px;
 }
 
 .arrowlink a span {
@@ -254,7 +254,17 @@ li.ast-masthead-custom-menu-items a {
 
 
 
-/*														 page-styling 											*/
+/*														 page-styles 											*/
+#page-main-content {
+    float: left;
+}
+#page-main-content > div {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 790px;
+}
+
+
 @media (max-width: 768px) {
     #page-side-menu {
         width: 0 !important;
