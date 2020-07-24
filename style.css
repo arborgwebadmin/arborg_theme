@@ -16,7 +16,11 @@ Template: astra
 @import "iconStyle.css";
 @import "colorStyle.css";
 
-a:hover {
+a {
+    color: var(--color1);
+}
+
+a:hover, a:focus {
     text-decoration: underline !important;
 }
 
