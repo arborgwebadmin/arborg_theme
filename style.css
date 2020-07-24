@@ -16,12 +16,12 @@ Template: astra
 @import "iconStyle.css";
 @import "colorStyle.css";
 
-#colophon a, #content a{
+footer a, .site-content a{
     color: var(--color1);
 }
 
 a:hover, a:focus {
-    text-decoration: underline !important;
+    text-decoration: underline;
 }
 
 .no-border {
