@@ -10,11 +10,15 @@ Text Domain: skolasidur-arborg
 Template: astra
 */
 /*Screen sizes*/
-/*medium breaking point 992px
- * small breaking point 768px */
+/*medium breaking point 980px
+ * small breaking point 760px */
 /* 													 stylings 											*/
 @import "iconStyle.css";
 @import "colorStyle.css";
+
+a:hover {
+    text-decoration: underline !important;
+}
 
 .no-border {
     border: none;
@@ -67,7 +71,7 @@ Template: astra
     column-gap: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
     #split-two .fl-rich-text {
         -ms-column-count: 1;
         -webkit-column-count: 1;
@@ -134,7 +138,24 @@ p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
 	font-weight: 600;
 }
 
-/*									 footer styling 																				*/
+/*									 footer style 																				*/
+
+.site-footer .widget-title {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase !important;
+}
+
+.site-footer .wpp-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.site-footer .wpp-list > li {
+    width: 50%;
+    font-size: 15px;
+}
+
 .footer-link img {
 	margin: 30px;
 }
@@ -163,7 +184,7 @@ p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
 	display: table-cell;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 760px) {
 	.site-footer .ast-row {
 		display: flex;
 		justify-content: center;
@@ -171,7 +192,7 @@ p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
 	.widget {
 		display: flex;
 		justify-content: center;
@@ -180,7 +201,7 @@ p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
 }
 
 
-/* 											header styling														*/
+/* 											header style														*/
 
 a.menu-link:hover span.sub-arrow:after {
 	transform: rotate(180deg);
@@ -265,7 +286,7 @@ li.ast-masthead-custom-menu-items a {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 980px) {
     #page-side-menu {
         width: 0 !important;
     }
@@ -294,7 +315,7 @@ li.ast-masthead-custom-menu-items a {
     height: 120px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
     #icons-menu-block .fl-col-group {
         display: grid;
         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
@@ -417,7 +438,7 @@ li.ast-masthead-custom-menu-items a {
 	
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
     #vidburdir .simcal-events-list-container {
         flex-direction: column;
     }
