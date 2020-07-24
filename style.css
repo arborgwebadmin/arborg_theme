@@ -16,21 +16,17 @@ Template: astra
 @import "iconStyle.css";
 @import "colorStyle.css";
 
-.site-footer a, .site-content a{
-    color: var(--color1);
-}
 
 .site-footer {
     color: #1f1f1f;
 }
 
-.site-footer a:hover, .site-footer a:focus, .site-content a:hover, .site-content a:focus {
-    text-decoration: underline;
-}
-
 .site-content h2 a:hover, .site-content h2 a:focus {
     text-decoration: none;
-    color: var(--color1);
+}
+
+.site-footer a:hover, .site-footer a:focus, .site-content a:hover, .site-content a:focus {
+    text-decoration: underline;
 }
 
 .site-content h2 a {
@@ -161,7 +157,7 @@ p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase !important;
-    color: #1f1f1f;
+    color: #636363;
 }
 
 .site-footer .wpp-list {
@@ -275,8 +271,14 @@ li.ast-masthead-custom-menu-items a {
 .parent-sidebar-menu .current-menu-ancestor > a {
 	font-weight: 600;
 	padding: 10px 10px 10px 20px;
+}
 
-	border-left: 3px solid #335227;
+.parent-sidebar-menu .current-menu-ancestor a {
+    color: #1f1f1f;
+}
+
+.parent-sidebar-menu .current-menu-ancestor a:hover {
+    text-decoration: none;
 }
 
 .child-sidebar-menu .menu-item {
@@ -926,5 +928,14 @@ table.simcal-calendar-grid .simcal-events {
 }
 
 h2 a {
+    color: var(--color1);
+}
+
+.site-footer a, .site-content a{
+    color: var(--color1);
+}
+
+
+.site-content h2 a:hover, .site-content h2 a:focus {
     color: var(--color1);
 }
