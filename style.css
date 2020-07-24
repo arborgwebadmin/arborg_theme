@@ -275,6 +275,12 @@ li.ast-masthead-custom-menu-items a {
 
 .parent-sidebar-menu .current-menu-ancestor a {
     color: #1f1f1f;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    -webkit-box-align: center;
+    
+
 }
 
 .parent-sidebar-menu .current-menu-ancestor a:hover {
