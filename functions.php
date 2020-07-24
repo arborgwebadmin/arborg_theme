@@ -39,7 +39,7 @@ function wpb_hook_javascript_header() {
 					}
 				}
 			}
-			change_search_icon();
+			//change_search_icon();
 			
 			function inject_facebook() {
 				var prevElem = document.getElementsByClassName('parent-menu-item')[3];
@@ -56,7 +56,7 @@ function wpb_hook_javascript_header() {
 				container.append( fbIcon );
 				prevElem.parentNode.insertBefore(container, prevElem.nextSibling);
 			}
-			//inject_facebook();
+			inject_facebook();
 			
 			var nodes = document.getElementsByClassName('icon');
 			for(var i=0; i< nodes.length; i++) {
