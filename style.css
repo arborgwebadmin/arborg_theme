@@ -16,8 +16,12 @@ Template: astra
 @import "iconStyle.css";
 @import "colorStyle.css";
 
-footer a, .site-content a{
+.site-footer a, .site-content a{
     color: var(--color1);
+}
+
+.site-footer {
+    color: #1f1f1f;
 }
 
 a:hover, a:focus {
