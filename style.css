@@ -30,6 +30,7 @@ Template: astra
 
 .site-content h2 a:hover, .site-content h2 a:focus {
     text-decoration: none;
+    color: var(--color1);
 }
 
 .site-content h2 a {
