@@ -24,8 +24,12 @@ Template: astra
     color: #1f1f1f;
 }
 
-a:hover, a:focus {
+.site-footer a:hover, .site-footer a:focus, .site-content a:hover, .site-content a:focus {
     text-decoration: underline;
+}
+
+h2 a:hover, h2 a:focus {
+    text-decoration: none;
 }
 
 .no-border {
@@ -152,6 +156,7 @@ p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase !important;
+    color: #1f1f1f;
 }
 
 .site-footer .wpp-list {
@@ -913,4 +918,8 @@ table.simcal-calendar-grid .simcal-events {
 
 .felligluggi .fl-accordion-item-active .fl-accordion-button-label {
     color: var(--color1) !important;
+}
+
+h2 a {
+    color: var(--color1);
 }
