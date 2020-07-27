@@ -115,7 +115,10 @@ p {
 }
 
 p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
-	padding-right: 10px;
+    display: table-cell;
+    vertical-align: middle;
+    min-width: 1.6em;
+    
 }
 
 

@@ -61,6 +61,7 @@ function wpb_hook_javascript_header() {
 			var nodes = document.getElementsByClassName('icon');
 			for(var i=0; i< nodes.length; i++) {
 				var node = nodes[i];
+				node.style.display = "table-cell";
 				var icon = document.createElement('span');
 				var className = 'ar-icon-'+node.classList[1];
 				icon.classList.add(className);
