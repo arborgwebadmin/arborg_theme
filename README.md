@@ -27,35 +27,21 @@ Vefsíðan er tengd við Git í gegnum plesk.
 12. Velja "New" -> "Create File"
 13. "File name" = "colorStyle.css"
 14. Líma:
-```
-:root{
-    --color1: ;
-    --color1Fade: ;
-    --color2: ;
-    --color2Fade: ;
-    --color3: ;
-    --color3Fade: ;
-    --color4: ;
-    --color4Fade: ;
-}
-```
-Einnig (hægt að finna undir colorStyleTemplate.css)
+  ```
+  :root{
+      --color1: ;
+      --color1Fade: ;
+      --color2: ;
+      --color2Fade: ;
+      --color3: ;
+      --color3Fade: ;
+      --color4: ;
+      --color4Fade: ;
+  }
+  ```
+  Einnig (hægt að finna undir colorStyleTemplate.css)
 15. Fylla inn með viðeigandi litum (color*Fade er rgba litur með a gildi sem 0.2)(hægt að hafa færri liti með að setja sama litinn aftur) og velja "OK"
 16. Fara inná wordpress sem kerfisstjóri og breyta þemanu í "skolasidur-arborg".
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Höfundur
 
