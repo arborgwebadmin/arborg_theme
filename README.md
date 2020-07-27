@@ -39,7 +39,6 @@ Vefsíðan er tengd við Git í gegnum plesk.
         --color4Fade: ;
     }
     ```
-  Einnig (hægt að finna undir colorStyleTemplate.css)
 15. Fylla inn með viðeigandi litum (color*Fade er rgba litur með a gildi sem 0.2)(hægt að hafa færri liti með að setja sama litinn aftur) og velja "OK"
 16. Fara inná wordpress sem kerfisstjóri og breyta þemanu í "skolasidur-arborg".
 
