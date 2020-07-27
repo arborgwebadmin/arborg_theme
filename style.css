@@ -798,15 +798,15 @@ table.simcal-calendar-grid .simcal-day-number {
 /*valinn dagur*/
 #matsedla-widget .simcal-events-list-container .selected-label:nth-child(1) > span{
     border-color: var(--color1);
-    background-color: var(--color1);
+    background-color: var(--color1) !important;
 }
 
-#matsedla-widget .simcal-events-list-container .simcal-day-label:nth-child(2):not(.selected-label) > span:hover {
+#matsedla-widget .simcal-events-list-container .simcal-day-label:nth-child(3):not(.selected-label) > span:hover {
     background-color: var(--color2Fade) !important;
 }
 /*valinn dagur*/
 
-#matsedla-widget .simcal-events-list-container .selected-label:nth-child(2) > span{
+#matsedla-widget .simcal-events-list-container .selected-label:nth-child(3) > span{
     border-color: var(--color2);
     background-color: var(--color2) !important;
 }
