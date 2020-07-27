@@ -98,10 +98,6 @@ p {
 	margin-bottom: 1em !important;
 }
 
-.box-shadow {
-    box-shadow: 0 10px 20px rgba(0,0,0,.04);
-}
-
 /*												font styling															*/
 
 .summary {
@@ -625,6 +621,7 @@ table.simcal-calendar-grid .simcal-day-number {
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
+    box-shadow: 0 10px 20px rgba(0,0,0,.04);
 }
 
 
@@ -687,10 +684,6 @@ table.simcal-calendar-grid .simcal-day-number {
 	line-height: 1.5;
 	display: inline-block;
 	vertical-align: middle;
-}
-
-#matsedla-widget .selected-label span{
-    color: #fff !important;
 }
 
 #matsedla-widget .date-day {
@@ -802,7 +795,6 @@ table.simcal-calendar-grid .simcal-day-number {
 /*valinn dagur*/
 #matsedla-widget .simcal-events-list-container .selected-label:nth-child(1) > span{
     border-color: var(--color1);
-    background-color: var(--color1) !important;
 }
 
 #matsedla-widget .simcal-events-list-container .simcal-day-label:nth-child(3):not(.selected-label) > span:hover {
@@ -812,7 +804,6 @@ table.simcal-calendar-grid .simcal-day-number {
 
 #matsedla-widget .simcal-events-list-container .selected-label:nth-child(3) > span{
     border-color: var(--color2);
-    background-color: var(--color2) !important;
 }
 
 #matsedla-widget .simcal-events-list-container .simcal-day-label:nth-child(5):not(.selected-label) > span:hover {
@@ -821,17 +812,12 @@ table.simcal-calendar-grid .simcal-day-number {
 /*valinn dagur*/
 #matsedla-widget .simcal-events-list-container .selected-label:nth-child(5) > span{
     border-color: var(--color3);
-    background-color: var(--color3) !important;
 }
 #matsedla-widget .simcal-events-list-container .simcal-day-label:nth-child(7):not(.selected-label) > span:hover {
     background-color: var(--color4Fade) !important;
 }
 #matsedla-widget .simcal-events-list-container .selected-label:nth-child(7) > span {
     border-color: var(--color4);
-    background-color: var(--color4) !important;
-}
-#matsedla-widget .simcal-events-list-container .selected-label:nth-child(7) span {
-    color: #000 !important;
 }
 
 
