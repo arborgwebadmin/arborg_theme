@@ -1,60 +1,47 @@
-# Project Title
+# Þema fyrir undirsíður Árborgar
 
-One Paragraph of project description goes here
+Stílar og þema sem byggir á núverandi útliti arborg.is
 
-## Getting Started
+## Inngangur
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Þemað er keyrt sem viðbót af Astra þema þannig munu þeir sjá um allar helstu uppfærslur hjá wordpress
 
-### Prerequisites
+### Forkröfur
 
-What things you need to install the software and how to install them
+Áður en þemað er sett upp þarf að vera búið að hlaða inn Astra þema á vefsíðuna. Það er hægt að nálgast hér https://wpastra.com/
 
+### Uppsetning
+
+Vefsíðan er tengd við Git í gegnum plesk.
+1. Opna Plesk og skrá sig inn.
+2. Finna vefsíðuna undir "Websites & Domains".
+3. Opna "File Manager" undir "Files & Databases".
+4. Búa til nýja möppu inní "{vefsíða}/wp-content/themes sem heitir" "arborg-theme".
+5. Finna vefsíðuna undir "Websites & Domains".
+6. Opna "Git" undir "Dev Tools".
+7. Límia "https://github.com/arborgwebadmin/arborg_theme.git" undir "Remote Git repository" OG velja "{vefsíða}/wp_content/themes/arborg-theme" sem "to" áfangastað. (passa að rétt síða sé valin, stundum þarf að opna hana undir files til að hún birtist í brows glugganum). Velja "OK".
+8.  Opna "Repository settings" og afrita slóðina fyrir "Webhook URL".
+9. "https://github.com/arborgwebadmin/arborg_theme/settings/hooks/new" fara inná þessa slóð (þarf að vera skráður inn) og líma "Webhook URL" slóðina í "Payload URL". Velja "Add webhook".
+10. Fara aftur inná plesk opna "File Manager" (skref 2 og 3)
+11. Opna möppuna með þemanu "{vefsíða}/wp-content/theme/arborg-theme/".
+12. Velja "New" -> "Create File"
+13. "File name" = "colorStyle.css"
+14. Líma:
 ```
-Give examples
+:root{
+    --color1: ;
+    --color1Fade: ;
+    --color2: ;
+    --color2Fade: ;
+    --color3: ;
+    --color3Fade: ;
+    --color4: ;
+    --color4Fade: ;
+}
 ```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+Einnig (hægt að finna undir colorStyleTemplate.css)
+15. Fylla inn með viðeigandi litum (color*Fade er rgba litur með a gildi sem 0.2)(hægt að hafa færri liti með að setja sama litinn aftur) og velja "OK"
+16. Fara inná wordpress sem kerfisstjóri og breyta þemanu í "skolasidur-arborg".
 
 ## Built With
 
@@ -70,18 +57,6 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
-## Authors
+## Höfundur
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* **Hólmfríður Magnea Hákonardóttir**
