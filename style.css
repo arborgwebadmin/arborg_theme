@@ -98,6 +98,10 @@ p {
 	margin-bottom: 1em !important;
 }
 
+.box-shadow {
+    box-shadow: 0 10px 20px rgba(0,0,0,.04);
+}
+
 /*												font styling															*/
 
 .summary {
