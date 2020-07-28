@@ -57,8 +57,9 @@ function wpb_hook_javascript_header() {
 				prevElem.parentNode.insertBefore(container, prevElem.nextSibling);
 			}
 			inject_facebook();
-			console.log("running icons");
+			
 			var nodes = document.getElementsByClassName('icon');
+			console.log(nodes);
 			for(var i=0; i< nodes.length; i++) {
 				var node = nodes[i];
 				node.style.display = "table-cell";
