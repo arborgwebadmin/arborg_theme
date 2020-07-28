@@ -125,6 +125,10 @@ br {
     font-weight: 400;
 }
 
+.summary p {
+    margin-bottom: 0 !important;
+}
+
 p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
     display: table-cell;
     vertical-align: middle;
