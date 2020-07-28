@@ -617,8 +617,6 @@ table.simcal-calendar-grid .simcal-day-number {
 	border-top: 6px solid;
 }
 
-
-
 #skoladagatal .simcal-day + #skoladagatal .simcal-day-void {
     border-left: solid 1px #d1d1d1;
 }
@@ -635,7 +633,6 @@ table.simcal-calendar-grid .simcal-day-number {
 	border: 2px;
 }
 
-
 /*		matedill vika		*/
 
 #matsedill-container {
@@ -645,7 +642,6 @@ table.simcal-calendar-grid .simcal-day-number {
     background-size: contain;
     box-shadow: 0 10px 20px rgba(0,0,0,.04);
 }
-
 
 #matsedla-widget .simcal-day {
     display: none;
