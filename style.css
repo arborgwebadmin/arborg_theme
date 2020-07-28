@@ -18,6 +18,11 @@ Template: astra
 
 /*ath hvort litur breytist*/
 /*annað test*/
+
+.gold {
+    background-color: gold !important;
+}
+
 .box-shadow > div {
     box-shadow: 0 10px 20px rgba(0,0,0,.04);
 }
