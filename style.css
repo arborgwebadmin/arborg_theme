@@ -908,6 +908,7 @@ table.simcal-calendar-grid .simcal-events {
 
 .btn-color .fl-button, button.btn-square {
     background-color: var(--color1) !important;
+    color: #fff;
     border: none !important;
 }
 
