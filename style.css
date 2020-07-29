@@ -132,6 +132,7 @@ br {
 p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
     display: table-cell;
     vertical-align: middle;
+    text-align: center;
     min-width: 1.6em;
     
 }
@@ -933,15 +934,6 @@ table.simcal-calendar-grid .simcal-events {
     color: var(--color1) !important;
 }
 
-h2 a {
-    color: var(--color1);
-}
-
-.site-footer a, .site-content a{
-    color: var(--color1);
-}
-
-
-.site-content h2 a:hover, .site-content h2 a:focus {
+.site-footer a, .site-content a, h2 a, .site-content h2 a:hover, .site-content h2 a:focus {
     color: var(--color1);
 }

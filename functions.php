@@ -44,7 +44,6 @@ function wpb_hook_javascript_header() {
 			function inject_facebook() {
 				var menuItems = document.getElementsByClassName('parent-menu-item');
 				var i = menuItems.length - 1;
-				console.log(menuItems.length);
 				var prevElem = menuItems[i];
 				var container = document.createElement('li');
 				container.classList.add('menu-item');
