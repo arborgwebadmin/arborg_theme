@@ -222,6 +222,15 @@ p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
 	display: table-cell;
 }
 
+.widget_links img{
+    max-height: 100%;
+}
+
+.widget-links .xoxo {
+    display: grid;
+    grid-template-rows: 80px 80px 80px;
+}
+
 @media (min-width: 760px) {
 	.site-footer .ast-row {
 		display: flex;
