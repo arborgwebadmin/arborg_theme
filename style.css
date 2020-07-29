@@ -229,11 +229,22 @@ p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
 .widget_links .xoxo {
     display: grid;
     grid-template-rows: 80px 80px 80px;
+    grid-gap: 5px;
 }
 
 .footer-adv-overlay {
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+.footer-adv .ast-container {
+    max-width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.widget_links .widget-title {
+    display: none;
 }
 
 @media (min-width: 760px) {
