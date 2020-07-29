@@ -226,7 +226,7 @@ p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
     max-height: 100%;
 }
 
-.widget-links .xoxo {
+.widget_links .xoxo {
     display: grid;
     grid-template-rows: 80px 80px 80px;
 }
