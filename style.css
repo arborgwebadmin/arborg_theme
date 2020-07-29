@@ -231,6 +231,11 @@ p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
     grid-template-rows: 80px 80px 80px;
 }
 
+.footer-adv-overlay {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 @media (min-width: 760px) {
 	.site-footer .ast-row {
 		display: flex;
