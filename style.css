@@ -907,10 +907,13 @@ table.simcal-calendar-grid .simcal-events {
 	border-left: 3px solid var(--color1);
 }
 
+.parent-menu-item:nth-child(odd) ul.sub-menu {
+	border-color: var(--color1) !important;
+}
+
 .parent-menu-item:nth-child(even):hover {
 	background-color: var(--color2Fade);
 }
-
 
 .parent-menu-item:nth-child(even) .menu-item:hover {
 	border-left: 3px solid var(--color2);
