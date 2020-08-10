@@ -198,7 +198,7 @@ p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
 	margin: 30px;
 }
 
-.widget_media_image img {
+.footer-adv .widget_media_image img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -247,6 +247,8 @@ p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
     display: none;
 }
 
+
+
 @media (min-width: 760px) {
 	.site-footer .ast-row {
 		display: flex;
@@ -261,6 +263,18 @@ p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
 		justify-content: center;
 		text-align: center;
 	}
+}
+/* smaller footer */
+
+.ast-small-footer .ast-footer-overlay {
+    padding-top: 0 !important;
+    padding-bottom: 1em !important;
+}
+
+.ast-small-footer .ast-small-footer-wrap {
+    border-top: 1px solid #d1d1d1;
+    padding-top: 24px;
+    
 }
 
 
