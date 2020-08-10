@@ -117,7 +117,7 @@ function arborg_dashboard_widget_display() {
 
 
 	<h4><strong>Fréttir</strong></h4>
-    <p>Munið eftir að velja viðeigiandi flokk og setja aðalmynd ef við á.</p>
+    <p>Munið eftir að velja viðeigiandi flokk og setja aðalmynd ef við á. Hægt er að finna myndir inná https://unsplash.com/ við fréttir.</p>
 
 
 	<h4><strong>Flýtileiðir</strong></h4>

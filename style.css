@@ -714,24 +714,26 @@ table.simcal-calendar-grid .simcal-day-number {
     padding: 0 50px;
 }
 
-#matsedla-widget .simcal-day-label {
-    border-bottom: 0 !important;
+#matsedla-widget .event-title-container {
+    font-size: 24px;
+    font-weight: 300;
+    color: #888;
 }
 
-#matsedla-widget .simcal-day-label span {
-    font-family: "Source Sans Pro";
-    font-weight: 400;
-    text-align: center;
-	background-color: transparent !important;
-    color: #000;
-}
 
-#matsedla-widget .simcal-event-details {
+#matsedla-widget .simcal-event-details .event-content-container {
     text-align: center;
     font-size: 26px;
     margin-top: 30px;
 }
 
+.simcal-calendar > p.simcal-align-right {
+    display: none;
+}
+
+#matsedla-widget .simcal-day-label {
+    display: none;
+}
 
 /*  ------------------------------------------------------------------------------------------------------- COLORS   */
 
