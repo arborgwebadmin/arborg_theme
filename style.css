@@ -281,6 +281,10 @@ p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
     width: 70px;
 }
 
+.ast-smaller-footer .text-widget {
+    color: #888;
+}
+
 
 /* 											header style														*/
 
@@ -810,6 +814,6 @@ table.simcal-calendar-grid .simcal-events {
     color: var(--color1) !important;
 }
 
-.site-footer a, .site-content a, h2 a, .site-content h2 a:hover, .site-content h2 a:focus {
+.site-footer a, .site-footer a:hover, .site-content a, h2 a, .site-content h2 a:hover, .site-content h2 a:focus {
     color: var(--color1);
 }
