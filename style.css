@@ -324,6 +324,11 @@ li.ast-masthead-custom-menu-items a {
 	display: table-cell;
 	vertical-align: baseline !important;
 }
+
+.sub-menu .menu-link:not(.ast-disable-link) .menu-text {
+    font-weight: 400;
+}
+
 /*posts*/
 
 .fl-post-grid-text {
