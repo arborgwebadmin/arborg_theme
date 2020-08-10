@@ -262,7 +262,7 @@ p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
 }
 
 @media (max-width: 760px) {
-	.widget {
+	.widget:not(.popular-posts) {
 		display: flex;
 		justify-content: center;
 		text-align: center;
