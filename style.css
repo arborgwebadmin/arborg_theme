@@ -266,7 +266,11 @@ p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
 		display: flex;
 		justify-content: center;
 		text-align: center;
-	}
+    }
+    
+    .widget.popular-posts {
+        text-align: center;
+    }
 }
 /* smaller footer */
 
