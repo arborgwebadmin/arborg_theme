@@ -228,12 +228,17 @@ p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
 
 .widget_links img{
     max-height: 100%;
+    max-width: 150px;
 }
 
 .widget_links .xoxo {
     display: grid;
     grid-template-rows: 80px 80px 80px;
     grid-gap: 5px;
+}
+
+.widget_links .xoxo>li {
+    align-self: center;
 }
 
 .footer-adv-overlay {
