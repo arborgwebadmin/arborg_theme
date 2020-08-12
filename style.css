@@ -805,7 +805,7 @@ table.simcal-calendar-grid .simcal-events {
 }
 
 .link a, .icon-btn .fl-icon-wrap a{
-	color: var(--color4) !important;
+	color: var(--color1) !important;
 }
 
 .btn-color .fl-button, button.btn-square {
