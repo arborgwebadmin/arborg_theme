@@ -593,6 +593,8 @@ li.ast-masthead-custom-menu-items a {
 	color: #fff
 }
 
+#skoladagatal .simcal-event-title
+
 .simcal-calendar-grid {
 	position: relative;
 	background-color: #fff;
@@ -633,7 +635,7 @@ li.ast-masthead-custom-menu-items a {
 
 table.simcal-calendar-grid .simcal-events,
 .simcal-default-calendar-grid .simcal-events > .simcal-event:hover {
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 600;
 	text-decoration: none !important;
 }
