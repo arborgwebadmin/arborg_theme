@@ -610,7 +610,8 @@ li.ast-masthead-custom-menu-items a {
 
 
 .simcal-calendar-grid thead tr:nth-child(1) h3 {
-	font-size: 22px;
+    font-size: 22px;
+    text-transform: capitalize;
 }
 
 .simcal-calendar-grid thead tr:nth-child(2) {
@@ -633,7 +634,7 @@ li.ast-masthead-custom-menu-items a {
 
 table.simcal-calendar-grid .simcal-events,
 .simcal-default-calendar-grid .simcal-events > .simcal-event:hover {
-	font-size: 14px;
+	font-size: 14px !important;
 	font-weight: 600;
 	text-decoration: none !important;
 }
