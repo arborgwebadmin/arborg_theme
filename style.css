@@ -643,6 +643,10 @@ table.simcal-calendar-grid .simcal-events,
     font-size: 14px !important;
 }
 
+#skoladagatal .simcal-event-details {
+    padding: 0 !important;
+}
+
 table.simcal-calendar-grid .simcal-events {
 	padding-left: 10px;
 	padding-right: 10px;
