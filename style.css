@@ -298,7 +298,7 @@ p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
 
 .ast-header-sticked {
     background-color: #f4f5f8 !important;
-    box-shadow: 0 0 10 0 rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 0 10 0 rgba(0, 0, 0, 0.04) !important;
 }
 
 a.menu-link:hover span.sub-arrow:after {
@@ -413,6 +413,10 @@ li.ast-masthead-custom-menu-items a {
 
 
 /*																icon-btn-group								*/
+#icons-menu-block .fl-row-content-wrap {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
 #icons-menu-block .fl-icon-wrap {
     display: flex;
     flex-direction: column;
@@ -726,12 +730,6 @@ table.simcal-calendar-grid .simcal-day-number {
 
 #matsedla-widget {
     padding: 0 50px;
-}
-
-#matsedla-widget .event-title-container {
-    font-size: 24px;
-    font-weight: 300;
-    color: #888;
 }
 
 
