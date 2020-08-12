@@ -296,6 +296,11 @@ p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
 
 /* 											header style														*/
 
+.ast-header-sticked {
+    background-color: #f4f5f8 !important;
+    box-shadow: 0 0 10 0 rgba(0, 0, 0, 0.05) !important;
+}
+
 a.menu-link:hover span.sub-arrow:after {
 	transform: rotate(180deg);
 }
