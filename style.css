@@ -227,7 +227,7 @@ p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
 }
 
 .widget_links img{
-    max-height: 100%;
+    max-height: 80px;
     max-width: 150px;
 }
 
@@ -828,7 +828,7 @@ table.simcal-calendar-grid .simcal-events {
 	color: var(--color1) !important;
 }
 
-.btn-color .fl-button, button.btn-square {
+.btn-color .fl-button, button.btn-square, .fl-button {
     background-color: var(--color1) !important;
     color: #fff;
     border: none !important;
