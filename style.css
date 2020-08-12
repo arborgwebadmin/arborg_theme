@@ -696,7 +696,7 @@ table.simcal-calendar-grid .simcal-day-number {
 }
 
 .simcal-default-calendar .simcal-present div:nth-child(1) {
-	border: 2px;
+	border: 0 !important;
 }
 
 /*		matedill vika		*/
