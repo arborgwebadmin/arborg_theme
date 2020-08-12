@@ -234,6 +234,7 @@ p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
 .widget_links .xoxo {
     display: grid;
     grid-template-rows: 80px 80px 80px;
+    grid-template-columns: auto auto auto;
     grid-gap: 5px;
 }
 
