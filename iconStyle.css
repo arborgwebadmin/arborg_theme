@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'arborg-icon';
-  src:  url('fonts/arborg-icon.eot?fw1lg5');
-  src:  url('fonts/arborg-icon.eot?fw1lg5#iefix') format('embedded-opentype'),
-    url('fonts/arborg-icon.ttf?fw1lg5') format('truetype'),
-    url('fonts/arborg-icon.woff?fw1lg5') format('woff'),
-    url('fonts/arborg-icon.svg?fw1lg5#arborg-icon') format('svg');
+  src:  url('fonts/arborg-icon.eot?y5hsej');
+  src:  url('fonts/arborg-icon.eot?y5hsej#iefix') format('embedded-opentype'),
+    url('fonts/arborg-icon.ttf?y5hsej') format('truetype'),
+    url('fonts/arborg-icon.woff?y5hsej') format('woff'),
+    url('fonts/arborg-icon.svg?y5hsej#arborg-icon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -32,6 +32,9 @@
   content: "\e901";
 }
 .ar-icon-phone:before {
+  content: "\e902";
+}
+.ar-icon-tel:before {
   content: "\e902";
 }
 .ar-icon-dinner:before {
