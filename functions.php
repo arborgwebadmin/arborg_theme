@@ -61,7 +61,7 @@ function wpb_hook_javascript_header() {
 				container.append( fbIcon );
 				prevElem.parentNode.insertBefore(container, prevElem.nextSibling);
 			}
-			var link = <?php echo $facebookLink; ?>;
+			var link = <?php echo json_encode($facebookLink, JSON_HEX_TAG); ?>;
 			if (link) {
 				inject_facebook(link);
 			}
