@@ -8,10 +8,13 @@
  * @since 1.0.0
  */
 
+include 'facebook.php';
+
 /**
  * Define Constants
  */
 define( 'CHILD_THEME_SKOLASIDUR_ARBORG_VERSION', '1.0.0' );
+
 
 /**
  * Enqueue styles
@@ -29,7 +32,7 @@ add_action( 'wp_enqueue_scripts', 'child_enqueue_styles', 15 );
 function wpb_hook_javascript_header() {
 	?>
 		<script>
-			
+
 			function change_search_icon() {
 				var icon = document.getElementsByClassName('astra-search-icon');
 				if (icon) {
@@ -41,14 +44,14 @@ function wpb_hook_javascript_header() {
 			}
 			//change_search_icon();
 			
-			function inject_facebook() {
+			function inject_facebook(link) {
 				var menuItems = document.getElementsByClassName('parent-menu-item');
 				var i = menuItems.length - 1;
 				var prevElem = menuItems[i];
 				var container = document.createElement('li');
 				container.classList.add('menu-item');
 				var fbIcon = document.createElement('a');
-				fbIcon.href = "#";
+				fbIcon.href = link;
 				fbIcon.rel = "nofollow";
 				fbIcon.target = "_blank";
 				fbIcon.classList.add('facebook-link');
@@ -58,10 +61,13 @@ function wpb_hook_javascript_header() {
 				container.append( fbIcon );
 				prevElem.parentNode.insertBefore(container, prevElem.nextSibling);
 			}
-			inject_facebook();
+			var link = <?php echo $facebookLink; ?>;
+			if (link) {
+				inject_facebook(link);
+			}
+			
 			
 			var nodes = document.getElementsByClassName('icon');
-			console.log(nodes);
 			for(var i=0; i< nodes.length; i++) {
 				var node = nodes[i];
 				node.style.display = "table-cell";
