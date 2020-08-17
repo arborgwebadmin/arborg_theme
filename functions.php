@@ -32,6 +32,7 @@ add_action( 'wp_enqueue_scripts', 'child_enqueue_styles', 15 );
 /*gitprufa*/
 function wpb_hook_javascript_header() {
 	?>
+	<span id="fb" data-link=$facebookLink></span>
 		<script>
 
 			function change_search_icon() {
@@ -62,7 +63,7 @@ function wpb_hook_javascript_header() {
 				container.append( fbIcon );
 				prevElem.parentNode.insertBefore(container, prevElem.nextSibling);
 			}
-			var link = <?php echo json_encode ($facebookLink, JSON_HEX_TAG); ?>;
+			var link = document.getElementById('fb').dataset.link;
 			console.log(link);
 			if (link) {
 				inject_facebook(link);
