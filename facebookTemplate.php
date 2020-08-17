@@ -1,1 +1,3 @@
-var facebookLink = 0;
+<php? 
+$facebookLink = 0;
+?>
