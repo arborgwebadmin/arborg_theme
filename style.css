@@ -747,6 +747,11 @@ table.simcal-calendar-grid .simcal-day-number {
     margin-top: 30px;
 }
 
+#matsedla-widget .simcal-events-list-container {
+    text-align: center;
+    font-size: 26px;
+}
+
 .simcal-calendar > p.simcal-align-right {
     display: none;
 }
