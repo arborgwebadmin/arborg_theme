@@ -96,6 +96,7 @@ a {
     -webkit-column-gap: 20px;
     -moz-column-gap: 20px;
     column-gap: 20px;
+    break-inside: avoid;
 }
 
 @media (max-width: 760px) {
