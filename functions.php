@@ -110,6 +110,10 @@ function arborg_dashboard_widget_display() {
 		<li><a href='<?php echo admin_url("post-new.php") ?>'>Ný færsla</a></li>
     </ul>
 
+	<h3><strong>Leiðbeiningar og handbók</strong></h3>
+		<p>Ath að velja "Login with Microsoft"</p>
+	<a href="https://rh-arborg.atlassian.net/wiki/spaces/VEF/pages/529891329/Wordpress+lei+beiningar" target="_blank" rel="noopener">Wordpress leiðbeiningar</a>
+
 
     <?php
 }
