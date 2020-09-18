@@ -55,6 +55,13 @@ function wpb_hook_javascript_header() {
 				icon.classList.add(className);
 				node.parentNode.insertBefore(icon, node);
 			}
+			
+			var heads = document.getElementsByClassName("parent-menu-item");
+			for (var i=0; i<heads.length; i++) {
+				var head = heads[i];
+				console.log(head.firstChild);
+				head.firstChild.removeAttribute("href");
+			}
 		</script>
 	<?php
 }
