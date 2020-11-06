@@ -321,7 +321,7 @@ a.menu-link:hover span.sub-arrow:after {
 	transform: rotate(180deg);
 }
 
-.parent-menu-item {
+.parent-menu-item, .parent-item { 
 	font-size: 1.1rem;
 	cursor: pointer;
 }
@@ -826,7 +826,7 @@ table.simcal-calendar-grid .simcal-events {
     color: var(--color1);
 }
 
-.parent-menu-item:nth-child(odd):hover {
+.parent-menu-item:nth-child(odd):hover, .parent-item:nth-child(odd):hover {
 	background-color: var(--color1Fade);
 }
 
@@ -838,7 +838,7 @@ table.simcal-calendar-grid .simcal-events {
 	border-color: var(--color1) !important;
 }
 
-.parent-menu-item:nth-child(even):hover {
+.parent-menu-item:nth-child(even):hover, .parent-item:nth-child(even):hover {
 	background-color: var(--color2Fade);
 }
 
