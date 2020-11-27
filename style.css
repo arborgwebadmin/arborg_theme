@@ -263,7 +263,7 @@ p > span[class*='ar-icon'], h1 > span[class*='ar-icon'] {
     display: none;
 }
 
-.footer .widget {
+.footer-adv .widget {
     margin: 0 !important;
 }
 
