@@ -460,6 +460,7 @@ li.ast-masthead-custom-menu-items a {
 #icons-menu-block .fl-icon-text {
     padding-left: 0;
     text-align: center;
+    padding-top: 5px;
 }
 
 #icons-menu-block .icon-btn {
