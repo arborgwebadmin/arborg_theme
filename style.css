@@ -359,6 +359,11 @@ li.ast-masthead-custom-menu-items a {
     font-weight: 400;
 }
 
+.main-header-menu .sub-menu .menu-link{
+        padding: .6em 1em;
+}
+
+
 /*------------------------------------------------logos------------------------------------------------*/
 
 .logo{
