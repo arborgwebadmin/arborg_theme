@@ -550,6 +550,10 @@ li.ast-masthead-custom-menu-items a {
     min-width:60px;
 }
 
+#vidburdir .simcal-event-details {
+	overflow: visible !important;
+}
+
 /*d*/
 #vidburdir .simcal-event-details .event-date-day {
     position:absolute;
